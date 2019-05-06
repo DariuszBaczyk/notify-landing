@@ -1,0 +1,256 @@
+// ---------- Features start ----------
+
+.features__container {
+    @media only screen and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        margin: 25px 0;
+    } 
+
+    @media only screen and (min-width: 992px) {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 20px;
+        justify-content: center;
+        margin: 50px 0;
+    }
+    
+    .features__feature-item {
+        margin: 25px 0;
+    }
+
+    .feature-item__icon {
+        background-color: $color-primary;
+        border-radius: 50%;
+        padding: 1.3rem;
+        font-size: 2.5rem;
+    }
+    
+    .feature-item__title {
+        margin: 20px;
+    }
+    
+    .feature-item__text {
+        font-family: Arial, sans-serif;
+        color: $color-grey;
+    }
+    
+}
+
+// ---------- Features end ----------
+
+// ---------- Subscribe start ----------
+
+.subscribe {
+    background-color: $color-secoundary;
+
+    .subscribe__content {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+
+        @media only screen and (min-width: 992px) {
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-gap: 5vw;
+        }
+    }
+
+    .subscribe__form {
+        padding-top: 50px;
+
+        @media only screen and (min-width: 992px) {
+            padding: 50px 0;
+        }
+
+        .form__title {
+            margin: 20px 0;
+            text-align: center;
+
+            @media only screen and (min-width: 992px) {
+                text-align: left;
+            }
+         }
+
+         .form__text {
+            padding-bottom: 20px;
+            font-family: Arial, sans-serif;
+            color: $color-grey;
+         }
+
+         .form__email {
+            display: grid;
+            position: relative;
+            width: 85%;
+            background: $color-white;
+            border-radius: 15px;
+            overflow: hidden;
+            margin: auto;
+
+            @media only screen and (min-width: 992px) {
+                margin: 0;
+            }
+
+            .form__email-input {
+                border: none;
+                padding: 15px 2px;
+                font-size: 16px;
+                margin: 0 5%;
+                height: 50px;
+                width: 95%;
+            }
+
+            .form__btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 35%;
+                height: 100%;
+                border: none;
+                font-weight: 500;
+                background: $color-primary;
+                color: $color-white;
+                letter-spacing: 1.5px;
+                transition: all ease 0.5s;
+                cursor: pointer;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .subscribe__content-video {
+        padding: 50px 0;
+
+        .subscribe__video {
+            border: 10px solid $color-secoundary;
+            border-radius: 20px;
+            z-index: 2;
+            overflow: hidden;
+            width: 380px;
+            height: 220px;
+
+            @media only screen and (min-width: 768px) {
+                width: 540px;
+                height: 320px;
+            }
+
+            @media only screen and (min-width: 992px) {
+                border: 10px solid $color-secoundary;
+                width: 420px;
+                height: 250px;
+            }
+
+            @media only screen and (min-width: 1200px) {
+                width: 540px;
+                height: 320px;
+            }
+
+            .video__size {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+// ---------- Subscribe end ----------
+// ---------- Testimonials start ----------
+
+.testimonials {
+    width: 90vw;
+
+    .testimonials__client {
+        position: relative;
+
+        .client__testimonial {
+            position: relative;
+            background-color: $color-white;
+
+            .client__quote {
+                margin-top: 40px;
+                margin-bottom: 20px;
+                padding: 0 10%;
+                font: italic 18px Arial, sans-serif;
+                color: $color-grey;
+            }
+    
+            .client__name {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .testimonials__nav {
+        position: relative;
+        margin-top: 1.5rem;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+
+        .nav__client {
+            display: inline-block;
+            position: relative;
+            width: 50px;
+            height: 50px;
+            margin: 2px;    
+            cursor: pointer;
+
+            .client__image {
+                z-index: 1;
+            }
+
+            &:hover .overlay{
+                opacity: 0.7;
+            }
+
+            // .client__image--first {
+            //     @include gradient(left, url(../../images/notify-home-page_13.jpg), $testimonials-gradient);
+            //     background-repeat: no-repeat;
+            //     background-size: cover;
+            //     height: 50px;
+            //     width: 50px;
+            //     z-index: 9999;
+            // }
+
+            // .client__image--last {
+            //     @extend .client__image--first;
+            //     @include gradient(right, url(../../images/notify-home-page_09.jpg), $testimonials-gradient);
+            // }
+        }
+    }
+}
+
+// ---------- Testimonials end ----------
+// ---------- Get in touch start ----------
+
+.get-in-touch {
+    margin-top: 40px;
+
+    .get-in-touch__title {
+        margin-bottom: 20px;
+    }
+
+    .get-in-touch__text {
+        margin-bottom: 20px;
+        color: $color-grey;
+    }
+
+    .get-in-touch__social-icons {
+        display: grid;
+        grid-template-columns: repeat(6, 50px);
+        grid-gap: 1rem;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 20px;
+
+        .social-icons__icon {
+            position: absolute;
+            padding-top: 0.5rem;
+        }
+    }
+}
+
+// ---------- Get in touch end ----------

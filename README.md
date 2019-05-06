@@ -12,3 +12,7 @@ npm intall
 gulp build
 ```
 4. Run index.html from dist folder
+
+## Used libraries
+1. https://kenwheeler.github.io/slick/
+2. https://code.jquery.com/

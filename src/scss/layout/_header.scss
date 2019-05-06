@@ -1,0 +1,42 @@
+.hero {
+    height: 99vh;
+    border-top: 1vh $color-primary solid;
+    background: url(../../images/notify-hero-bg_02.jpg) no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+
+    .hero__container {
+        margin-left: 20vw;
+    }
+
+    .hero__title {
+        font: 60px "Gochi Hand", sans-serif;
+        margin: 20px;
+
+        .title__dot {
+            color: $color-primary;
+        }
+    }
+
+    .hero__text {
+        font-size: 24px;
+        margin: 20px;
+    }
+
+    .hero__systems{
+        @include perspective(1000);
+        display: grid;
+        grid-template-columns: repeat(3, 50px);
+        grid-gap: 1rem;
+        position: relative;
+        margin: 20px;
+
+        .systems__icon {
+            position: absolute;
+            padding: 0.8rem;
+        }
+    }
+}

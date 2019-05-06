@@ -1,12 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand|Roboto');
 html {
     font-size: font-size(main);
 }
 
 body {
-    font-family: font(main);
+    font-family: "Roboto", Arial, sans-serif;
     color: color(main);
 
     line-height: default(line-height);
+
+    display: grid;  
+}
+
+h2 {
+    font-size: 22px;
 }
 
 a {
@@ -17,4 +24,8 @@ a {
     &:hover {
         text-decoration: none;
     }
+}
+
+p {
+    line-height: 1.5rem;
 }

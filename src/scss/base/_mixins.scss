@@ -1,0 +1,35 @@
+@mixin rotateY($rotateY) {
+    -webkit-transform: rotateY($rotateY);
+    -moz-transform: rotateY($rotateY);
+    -o-transform: rotateY($rotateY);
+    transform: rotateY($rotateY);
+}
+
+@mixin transform($transition, $transform-style) {
+    -webkit-transition: $transition;
+	-webkit-transform-style: $transform-style;
+
+	-moz-transition: $transition;
+	-moz-transform-style: $transform-style;
+  
+    -o-transition: $transition;
+	-o-transform-style: $transform-style;
+
+	transition: $transition;
+    transform-style: $transform-style;
+}
+
+@mixin perspective($perspective) {
+    -webkit-perspective: $perspective;
+    -moz-perspective: $perspective;
+    -o-perspective: $perspective;
+    perspective: $perspective;
+}
+
+@mixin gradient($direction, $bg-url, $gradient-list...) { 
+    background: -webkit-linear-gradient($direction, $gradient-list), $bg-url;
+    background: -moz-linear-gradient($direction, $gradient-list), $bg-url;
+    background: -o-linear-gradient($direction, $gradient-list), $bg-url;
+    background: -ms-linear-gradient($direction, $gradient-list), $bg-url;
+    background: linear-gradient($direction, $gradient-list), $bg-url;  
+}

@@ -1,0 +1,22 @@
+.footer {
+    background-color: $color-secoundary;
+
+    .footer__links {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(100px, 1fr));
+        grid-gap: 10px;
+        align-self: center;
+        justify-items: center;
+        justify-content: center;
+        max-width: 700px;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        color: $color-grey;
+
+        @media only screen and (min-width: 768px) {
+            grid-template-columns: repeat(6, minmax(100px, 1fr));
+        }
+    }
+    
+}
