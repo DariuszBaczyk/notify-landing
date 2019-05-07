@@ -1,6 +1,9 @@
 # Notify landing
 Site made from Notify home page.
 
+## Life demo
+http://dariuszbaczyk.pl/portfolio/notify-lp/
+
 ## Get ready
 1. Clone repository
 2. Type in terminal:

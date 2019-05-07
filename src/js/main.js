@@ -1,4 +1,4 @@
-//"use strict";
+"use strict";
 // Slick slider
 $(document).ready(function(){
     $('.testimonials__client').slick();
@@ -7,9 +7,6 @@ $(document).ready(function(){
 
 
 $('.testimonials__client').slick({
-    //centerMode: true,
-    // autoplay: true,
-    //centerPadding: '60px',
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
