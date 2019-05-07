@@ -1,4 +1,4 @@
-# Site builder
+# Notify landing
 Site made from Notify home page.
 
 ## Get ready
