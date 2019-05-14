@@ -1,6 +1,9 @@
 # Notify landing
 Site made from Notify home page.
 
+## New version
+https://github.com/DariuszBaczyk/notify-landing-v2
+
 ## Life demo
 http://dariuszbaczyk.pl/portfolio/notify-lp/
 
